@@ -1,0 +1,48 @@
+<div class="container_form">
+  <div class="form_box">
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+      <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+      <h2>Iniciar Sesión</h2>
+      <div class="input_box">
+        <i class="fa-solid fa-user"></i>
+        <input
+          type="email"
+          formControlName="email"
+          id="email"
+          placeholder="`"
+          required
+        />
+        <label for="">Correo Electrónico</label>
+      </div>
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="text_danger">
+          Un Correo Electrónico es requerido.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="text_danger">
+          Este correo no es valido.
+        </p>
+      </div>
+      <div class="input_box">
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          formControlName="password"
+          id="password"
+          placeholder="`"
+          required
+        />
+        <label for="">Contraseña</label>
+      </div>
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text_danger">
+          Una contraseña es requerida.
+        </p>
+      </div>
+      <div class="button_box">
+        <button type="submit" class="submit_button">
+          Ingresar<i class="fa-solid fa-clipboard-list-check"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

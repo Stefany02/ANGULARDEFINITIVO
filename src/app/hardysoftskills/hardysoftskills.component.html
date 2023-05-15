@@ -1,0 +1,41 @@
+ <!--SKILLS-->
+ <h1 class="skill">Skills</h1>
+<section>
+  <div id="skill" class="about">
+    <div class="progreso1">
+      <div class="caja" *ngFor="let skill of skills.slice(0, 3)">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="text-center">
+            <h2 class="skill">{{ skill.name }}</h2>
+          </div>
+          <div class="percent" [attr.data-text]="skill.value + '%'" [style.--num]="skill.value">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="progreso2">
+      <div class="caja" *ngFor="let skill of skills.slice(3)">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="text-center">
+            <h2 class="skill">{{ skill.name }}</h2>
+          </div>
+          <div class="percent" [attr.data-text]="skill.value + '%'" [style.--num]="skill.value">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

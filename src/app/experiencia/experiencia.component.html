@@ -1,0 +1,20 @@
+<h1 class="Curriculum">Experiencia</h1>
+
+<section id="Experiencia" class="about">
+  <div class="container text-center">
+    <div *ngFor="let experiencia of experiencias" class="row">
+      <div class="col-3">
+        <img [src]="experiencia.imagen" [alt]="experiencia.empresa" width="150px" height="140px">
+      </div>
+      <div class="col-6 mt-4">
+        <h3 class="{{ experiencia.clase }}">
+          <h2> {{ experiencia.empresa }} {{ experiencia.fecha }} </h2>
+          <ul style="font-size: x-large;">
+            <li *ngFor="let tarea of experiencia.tareas">{{ tarea }}</li>
+          </ul>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+

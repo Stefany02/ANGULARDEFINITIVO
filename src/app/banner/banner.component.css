@@ -1,0 +1,17 @@
+section.banner{
+  background-image: linear-gradient(rgba(6, 5, 10, 0.889),
+   rgba(16, 15, 38, 0.618)),
+  url(../../assets/img/cerebro.png);
+  height: 100vh;
+  position:relative;
+  -msn-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1.text-white.text-center.Bienvenida{
+  padding-top: 15rem;
+}

@@ -1,0 +1,46 @@
+.btn-primary{
+  --bs-btn-hover-bg:0;
+  --bs-btn-hover-border-color:0;
+  --bs-btn-active-bg:0;
+  --bs-btn-active-border-color:0;
+  --bs-btn-hover-color:0;
+  --bs-btn-color:0;
+  --bs-border-width:0;
+}
+.btn-group{
+  display:block;
+}
+.btn-primary{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+i.fa-brands.fa-linkedin.fa-2xl.text-white:hover {
+  --bs-text-opacity: 1;
+  color: #00FFFF !important;
+}
+
+i.fa-brands.fa-square-instagram.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color:#ff1493 !important;
+}
+
+i.fa-brands.fa-square-facebook.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color:#0000FF !important;
+}
+
+i.fa-solid.fa-envelope.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color: #ffff00 !important;
+}
+
+i.fa-brands.fa-github.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color:#f31515 !important;
+}
+
+i.fa-solid.fa-user-lock.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color:#68fc05 !important;
+}
