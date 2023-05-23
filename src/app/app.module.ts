@@ -29,7 +29,7 @@ import { SkillService } from './services/skill.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-
+import { FormGroup } from '@angular/forms';
 @NgModule({
   declarations: [
   AppComponent,

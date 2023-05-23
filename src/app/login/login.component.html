@@ -1,6 +1,6 @@
 <div class="container_form">
   <div class="form_box">
-    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+    <form []="form" (ngSubmit)="onSubmit($event)">
       <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
       <h2>Iniciar Sesión</h2>
       <div class="input_box">
@@ -32,11 +32,6 @@
           required
         />
         <label for="">Contraseña</label>
-      </div>
-      <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text_danger">
-          Una contraseña es requerida.
-        </p>
       </div>
       <div class="button_box">
         <button type="submit" class="submit_button">

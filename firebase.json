@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "s public dist\\maquetadefinitiva",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

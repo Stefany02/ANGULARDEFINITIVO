@@ -1,0 +1,71 @@
+{
+  "banner":{
+  "titulo":"Bienvenidos",
+  "subtitulo": "Soy Stefany",
+"descripcion": "Desarrollador full stack Jr."
+},
+"miPortfolio":[
+  "Proyecto 1",
+  "Proyecto 2",
+  "Proyecto 3"
+],
+"experiencia":[{
+   "name": "Jenic",
+   "img": "https://scontent.faep14-3.fna.fbcdn.net/v/t39.30808-6/294848494_472308068231433_932743041961022694_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mrnVJV1mTPwAX8SE0S7&_nc_ht=scontent.faep14-3.fna&oh=00_AfDr5LgdVzHh_Dbq0ofMhure2ggEusSODNet_Qc891_EfA&oe=6457A3B0",
+   "periodo": 2022,
+   "url": "#"
+  },
+{
+  "name": "DyD_Distribuidorasanitaria",
+  "img":"https://scontent.faep14-3.fna.fbcdn.net/v/t1.6435-9/178789756_256016812880496_104724737778120321_n.jpg?stp=cp0_dst-jpg_e15_q65_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=85a577&_nc_ohc=stzCw7gDx_QAX-Bbefd&_nc_ht=scontent.faep14-3.fna&oh=00_AfCiUP_dsqYYXU8NVwzLrgyqd61nnT4okrVlmYFvb6_SXQ&oe=647A514E",
+  "periodo": "2020 - 2022",
+  "url":"#"
+},
+{
+  "name": "Baco Club de Vinos",
+  "img": "https://www.todoenunclick.com/wp-content/uploads/2016/09/BacoClub-logo.jpg",
+  "periodo": "2019",
+  "url": "#"
+}
+],
+"educacion":
+[{
+"carrera": "Licenciatura en Comercio Internacional",
+"edificio": "Universidad Nacional de Quilmes!",
+"periodo": "2021 - Actualidad",
+"img": "https://villarino24.files.wordpress.com/2020/02/quilmes.png"
+},
+{
+  "carrera": "intermediate level",
+  "educacion": "Instituto C.E.P.I ",
+  "periodo": "2023",
+  "img": "../img/ingles.jpg"
+}
+],
+"hard y soft skills":[{
+    "name": "Liderazgo",
+    "progreso": 89
+},
+{
+  "name": "inteligencia social",
+  "progreso": 85
+},
+{
+  "name": "Autogestion",
+  "progreso": 86
+},
+{
+  "name": "Idiomas",
+  "progreso": 50
+},
+{
+  "name": "Pensamiento Analitico",
+  "progreso": 80
+},
+{
+  "name": "Programacion",
+  "progreso": 30
+}
+]
+}
+

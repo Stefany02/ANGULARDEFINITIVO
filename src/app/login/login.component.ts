@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+form: FormGroup<any> | undefined;
+onSubmit($event: any) {
+throw new Error('Method not implemented.');
+}
+Email: any;
 
 }
