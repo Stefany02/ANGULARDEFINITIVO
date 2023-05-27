@@ -1,13 +1,40 @@
 <header>
-<nav class="navbar.navbar-expand  navbar bg-dark" data-bs-theme="dark">
-  <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-          <img src="../../assets/img/logo.png" alt="..." width="..." height="...">
-      </a>
-      <app-redes></app-redes>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="..." width="..." height="...">
+            </a>    
+            <div class="btn-group">
+              <a href="https://linkedin.com" target="_blank" class="btn btn-primary"><i class="fa-brands fa-linkedin fa-2xl text-white"></i></a>
+              <a href="https://instagram.com" target="_blank"class="btn btn-primary"><i class="fa-brands fa-square-instagram fa-2xl text-white"></i></a>
+              <a href="https://facebook.com" target="_blank" class="btn btn-primary"><i class="fa-brands fa-square-facebook fa-2xl text-white"></i></a>
+              <a href="https://gmail.com" target="_blank" class="btn btn-primary"><i class="fa-solid fa-envelope fa-2xl text-white"></i></a>
+              <a href="https://github.com" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github fa-2xl text-white"></i></a>
+              <!-- Button trigger modal -->
+              <i class="fa-solid fa-user-lock fa-2xl text-white"button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" ></i>
+            </div>
 
-</div>
-</nav>
+<!--Usuario y contraseña ventana modal-->  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 row">
+              <a href="/login" *ngIf="!logged" id="miusuario"></a>
+             <a href="/portfolio" *ngIf="logged" (click)="logout()">
+              <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
-<app-iniciar-sesion></app-iniciar-sesion>
 
+>

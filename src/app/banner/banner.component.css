@@ -4,11 +4,11 @@ section.banner{
   url(../../assets/img/cerebro.png);
   height: 100vh;
   position:relative;
-  -msn-background-size: cover;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  -msn-background-size: cover;
   background-repeat: no-repeat;
 }
 

@@ -8,7 +8,7 @@ interface Skill {
 @Component({
   selector: 'app-hardysoftskills',
   templateUrl: './hardysoftskills.component.html',
-  styleUrls: ['./hardysoftskills.component.css']
+  styleUrls: ['./hardysoftskills.component.css', './hardysoftskills.component2.css']
 })
 export class HardysoftskillsComponent {
 

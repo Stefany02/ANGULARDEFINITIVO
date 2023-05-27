@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class BannerComponent {
   bienvenida = 'Bienvenidos';
   saludo = 'Hola, soy Stefany Donnet';
-  contenido = 'Desarrolladora full stack jr.';
+  contenido = 'Desarrollador full stack jr.';
 
 }

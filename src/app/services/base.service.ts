@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export abstract class BaseService<T> {
-  protected baseUrl = 'https:midireccion.onrender.com/';
+  protected baseUrl = 'https://portfoliostefany.web.app/portfolio/';
   constructor(protected http: HttpClient, protected url: string) {}
 
   getAll(): Observable<T[]> {

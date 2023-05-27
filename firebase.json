@@ -1,10 +1,17 @@
 {
   "hosting": {
-    "public": "s public dist\\maquetadefinitiva",
+    "public": "dist/maquetadefinitiva",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
+
   }
 }

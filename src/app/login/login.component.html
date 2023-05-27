@@ -1,7 +1,6 @@
 <div class="container_form">
   <div class="form_box">
-    <form []="form" (ngSubmit)="onSubmit($event)">
-      <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
       <h2>Iniciar Sesión</h2>
       <div class="input_box">
         <i class="fa-solid fa-user"></i>
@@ -33,10 +32,24 @@
         />
         <label for="">Contraseña</label>
       </div>
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text_danger">
+          Una contraseña es requerida.
+        </p>
+        <p *ngIf="Password?.errors?.['minlength']" class="text_danger">
+          La contraseña debe contener 8 o mas caracteres.
+        </p>
+        <p *ngIf="Password?.errors?.['maxlength']" class="text_danger">
+          La contraseña debe contener como máximo 60 caracteres.
+        </p>
+      </div>
       <div class="button_box">
         <button type="submit" class="submit_button">
-          Ingresar<i class="fa-solid fa-clipboard-list-check"></i>
+          Iniciar Sesión<i class="fa-solid fa-clipboard-list-check"></i>
         </button>
+        <a href="/portfolio" class="return"
+          ><i class="fa-sharp fa-solid fa-briefcase"></i> Volver</a
+        >
       </div>
     </form>
   </div>
