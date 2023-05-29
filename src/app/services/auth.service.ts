@@ -6,7 +6,6 @@ import { UserService } from './user.service';
   providedIn: 'root',
 })
 export class AuthService {
- authURL = 'https://stefany-backend22.onrender.com';
   adminUser: any;
 
   constructor(private userServ: UserService) {
